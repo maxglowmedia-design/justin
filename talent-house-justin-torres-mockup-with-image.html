@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Justin Torres | Talent House Fight Gym</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: #0b0d10;
+      color: #ffffff;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .container { max-width: 1100px; margin: auto; padding: 32px; }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    .hero-image {
+      background: linear-gradient(135deg, #1a1d24, #0b0d10);
+      border-radius: 16px;
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+    }
+    .hero h1 { font-size: 48px; margin: 0 0 8px; }
+    .meta { color: #9aa0aa; margin-bottom: 20px; }
+
+    .buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary {
+      background: linear-gradient(90deg, #e63946, #ff6b6b);
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-weight: 600;
+      display: inline-block;
+    }
+    .btn-secondary {
+      border: 1px solid #333;
+      padding: 14px 22px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    /* SECTIONS */
+    section { margin-bottom: 80px; }
+    h2 { font-size: 32px; margin-bottom: 20px; }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card {
+      background: #141820;
+      border-radius: 14px;
+      padding: 20px;
+    }
+    .label { color: #8b90a0; font-size: 14px; }
+    .value { font-size: 20px; font-weight: 600; }
+
+    /* STORY */
+    .story { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; }
+    .quote { font-style: italic; margin-top: 20px; color: #e63946; }
+
+    /* VIDEOS */
+    .videos { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 8px; }
+    .video {
+      min-width: 240px;
+      height: 140px;
+      background: #1c2029;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      flex: 0 0 auto;
+    }
+
+    /* DONATE */
+    .donate {
+      background: linear-gradient(135deg, #141820, #0b0d10);
+      border-radius: 20px;
+      padding: 32px;
+    }
+    .amounts { display: flex; gap: 12px; margin: 20px 0; flex-wrap: wrap; }
+    .amount {
+      background: #1c2029;
+      padding: 12px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .amount:hover { background: #e63946; }
+
+    footer { text-align: center; padding: 40px; color: #666; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-image { height: 320px; }
+      .story { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-image"><img src="maxglowmedia_18_year_old_hispaic_mma_fighter_weigh_in_shot_--_44c6ae7a-2992-4b20-b799-2016ab7661ac_3.png" style="width:100%;height:100%;object-fit:cover;border-radius:16px;" /></div>
+    <div>
+      <h1>Justin Torres</h1>
+      <div class="meta">18 · Featherweight (145) · Biloxi, Mississippi</div>
+      <p>Amateur MMA fighter. Boxer-first. Building something bigger than himself.</p>
+      <div class="buttons">
+        <a href="#donate" class="btn-primary">Support Justin</a>
+        <a href="#videos" class="btn-secondary">Watch Training</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT -->
+  <section>
+    <h2>Fighter Snapshot</h2>
+    <div class="cards">
+      <div class="card"><div class="label">Record</div><div class="value">2–0 Amateur</div></div>
+      <div class="card"><div class="label">Primary Style</div><div class="value">Boxing</div></div>
+      <div class="card"><div class="label">Height</div><div class="value">5'7"</div></div>
+      <div class="card"><div class="label">Gym</div><div class="value">Talent House</div></div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section>
+    <h2>Why He Fights</h2>
+    <div class="story">
+      <div>
+        <p>Justin Torres is an 18-year-old amateur fighter from Biloxi, Mississippi. He lives with his single mother and younger sister, and every decision he makes is about creating opportunity for his family.</p>
+        <p>Boxing gave him discipline and focus. MMA gives him a bigger stage. Outside the gym, Justin cooks for his family and spends time fixing up an old truck — learning patience the same way he learned how to fight.</p>
+        <div class="quote">“I’m not chasing shortcuts. I’m building something for my family.”</div>
+      </div>
+      <div class="hero-image">Portrait</div>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section id="videos">
+    <h2>The Journey</h2>
+    <div class="videos">
+      <div class="video">Boxing Pads</div>
+      <div class="video">Conditioning</div>
+      <div class="video">Wrestling Basics</div>
+      <div class="video">Interview</div>
+    </div>
+  </section>
+
+  <!-- DONATE -->
+  <section id="donate" class="donate">
+    <h2>Support Justin’s Journey</h2>
+    <p>Your support helps cover training, travel, equipment, and competition fees.</p>
+    <div class="amounts">
+      <div class="amount">$10</div>
+      <div class="amount">$25</div>
+      <div class="amount">$50</div>
+      <div class="amount">$100</div>
+    </div>
+    <a class="btn-primary" href="#donate">Donate Now</a>
+  </section>
+
+</div>
+
+<footer>
+  Talent House Fight Gym · Biloxi, Mississippi
+</footer>
+
+</body>
+</html>
